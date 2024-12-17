@@ -66,28 +66,20 @@ cd Management-Surat-PT-Eclectic
 ## 2. Install Dependensi
 Instal dependensi PHP menggunakan Composer:
 ```
-bash
-Copy code
 composer install
+```
 Instal dependensi frontend (untuk CSS dan JavaScript) menggunakan NPM:
 ```
-```
-bash
-Copy code
 npm install
 ```
 
 ## 3. Konfigurasi Environment
 Salin file .env.example menjadi .env:
 ```
-bash
-Copy code
 cp .env.example .env
 ```
 Kemudian, buka file .env dan sesuaikan konfigurasi database dengan kredensial yang sesuai dengan setup MySQL kamu:
 ```
-env
-Copy code
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -99,8 +91,6 @@ DB_PASSWORD=password_kamu
 ## 4. Generate Key Aplikasi
 Generate key aplikasi Laravel dengan perintah:
 ```
-bash
-Copy code
 php artisan key:generate
 ```
 
@@ -108,46 +98,40 @@ php artisan key:generate
 Jalankan migrasi untuk membuat tabel-tabel yang diperlukan di database:
 
 ```
-bash
-Copy code
 php artisan migrate
 ```
 Jika kamu membutuhkan data sampel (seeds), kamu bisa menjalankan:
 ```
-bash
-Copy code
 php artisan db:seed
 ```
 ## 6. Jalankan Aplikasi
 Jalankan aplikasi menggunakan server pengembangan Laravel:
 ```
-bash
-Copy code
 php artisan serve
 ```
 Akses aplikasi di browser dengan membuka URL berikut:
 
 arduino
-Copy code
 ```
 http://127.0.0.1:8000
 ```
 Menambahkan Pengguna
 Aplikasi ini mendukung fitur login untuk pengguna dengan peran yang berbeda. Untuk menambahkan pengguna baru, kamu bisa melakukannya melalui halaman admin atau menggunakan perintah artisan:
 
-bash
-Copy code
+```
 php artisan tinker
+```
 Kemudian buat pengguna baru dengan perintah berikut:
 
-php
-Copy code
+```
 App\Models\User::create([
     'name' => 'Nama Pengguna',
     'email' => 'email@domain.com',
     'password' => bcrypt('password123'),
     'type' => 0,  // 0 untuk pengguna biasa, 1 untuk admin
 ]);
+```
+
 Struktur Direktori
 app/: Mengandung logika aplikasi (Controllers, Models, etc.).
 resources/views/: Template Blade untuk tampilan frontend.
