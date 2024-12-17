@@ -21,14 +21,14 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 # Website Management Pembuatan Surat dan Arsip Surat
 
-![Change-Password](https://github.com/user-attachments/assets/2b6df9cb-29ae-48a5-9d63-acc47f531732)
-![Change-Password](img/dashboard.png)
+![Change-Password](img/Dashboard.png)
 
 
 Proyek ini adalah aplikasi web untuk **manajemen pembuatan surat dan arsip surat** yang dibangun menggunakan **Laravel 9** dan **MySQL**. Aplikasi ini dirancang untuk mempermudah pembuatan, pengelolaan, dan penyimpanan surat dalam bentuk digital di sebuah organisasi atau perusahaan.
 
 ## Fitur Utama
 
+![Change-Password](img/Buat-Surat-Page.png)
 - **Pembuatan Surat**: Memungkinkan pengguna untuk membuat surat resmi dengan berbagai jenis surat.
 - **Arsip Surat**: Menyimpan dan mengelola arsip surat secara terstruktur.
 - **Autentikasi Pengguna**: Pengguna dapat login dan mengakses fitur berdasarkan peran mereka (misalnya Admin, Pengguna Biasa).
